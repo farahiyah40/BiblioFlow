@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" preserveAspectRatio="xMaxYMid slice">
+  <defs>
+    <linearGradient id="w1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2a9d8f" stop-opacity="0"/>
+      <stop offset="1" stop-color="#2a9d8f" stop-opacity=".55"/>
+    </linearGradient>
+    <linearGradient id="w2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#e8bd6a" stop-opacity="0"/>
+      <stop offset="1" stop-color="#e8bd6a" stop-opacity=".6"/>
+    </linearGradient>
+  </defs>
+  <path d="M0 150c80 30 160 30 240 0s160-30 240 0 160 30 240 0 130-20 180-4" fill="none" stroke="url(#w1)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M0 175c80 30 160 30 240 0s160-30 240 0 160 30 240 0 130-20 180-4" fill="none" stroke="url(#w2)" stroke-width="3" stroke-linecap="round"/>
+  <!-- book stack -->
+  <g transform="translate(690 78)">
+    <rect x="0" y="86" width="150" height="26" rx="5" fill="#c8963e"/>
+    <rect x="12" y="60" width="130" height="26" rx="5" fill="#2a9d8f"/>
+    <rect x="4" y="34" width="138" height="26" rx="5" fill="#e76f51"/>
+    <rect x="18" y="8" width="118" height="26" rx="5" fill="#f4e3c1"/>
+    <rect x="14" y="94" width="110" height="4" rx="2" fill="#fff" opacity=".45"/>
+    <rect x="26" y="68" width="92" height="4" rx="2" fill="#fff" opacity=".45"/>
+    <rect x="18" y="42" width="98" height="4" rx="2" fill="#fff" opacity=".45"/>
+    <rect x="32" y="16" width="76" height="4" rx="2" fill="#b9772a" opacity=".5"/>
+  </g>
+  <!-- sparkles -->
+  <circle cx="620" cy="46" r="5" fill="#e8bd6a" opacity=".8"/>
+  <circle cx="560" cy="120" r="3" fill="#fff" opacity=".6"/>
+  <circle cx="860" cy="40" r="4" fill="#2a9d8f" opacity=".8"/>
+  <circle cx="500" cy="38" r="2.5" fill="#fff" opacity=".5"/>
+  <path d="M770 30l4 10 10 4-10 4-4 10-4-10-10-4 10-4z" fill="#f4e3c1" opacity=".85"/>
+</svg>

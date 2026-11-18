@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 560" role="img" aria-label="Bookshelf illustration with floating books">
+  <style>
+    .float  { animation: float 5s ease-in-out infinite; }
+    .float2 { animation: float 6.5s ease-in-out infinite reverse; }
+    .spin   { transform-origin: 300px 280px; animation: spin 40s linear infinite; }
+    @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+    @keyframes spin  { to { transform: rotate(360deg); } }
+  </style>
+  <defs>
+    <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#9a6a3c"/>
+      <stop offset="1" stop-color="#5a3a22"/>
+    </linearGradient>
+    <linearGradient id="pageG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f6e7c8"/>
+      <stop offset="1" stop-color="#fffaf0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- background rings -->
+  <circle cx="300" cy="280" r="255" fill="#fff" opacity=".05"/>
+  <circle cx="300" cy="280" r="190" fill="#fff" opacity=".06"/>
+  <g class="spin" opacity=".35">
+    <circle cx="300" cy="25" r="6" fill="#e8bd6a"/>
+    <circle cx="555" cy="280" r="4" fill="#2a9d8f"/>
+    <circle cx="45" cy="280" r="5" fill="#f6e7c8"/>
+  </g>
+
+  <!-- bookcase frame -->
+  <rect x="120" y="110" width="360" height="340" rx="16" fill="#2c1c12"/>
+  <rect x="134" y="124" width="332" height="312" rx="8" fill="#3b271a"/>
+
+  <!-- shelf 1 books -->
+  <g>
+    <rect x="152" y="168" width="30" height="84" rx="3" fill="#c8963e"/>
+    <rect x="152" y="184" width="30" height="5" fill="#fff" opacity=".35"/>
+    <rect x="186" y="186" width="26" height="66" rx="3" fill="#2a9d8f"/>
+    <rect x="216" y="158" width="34" height="94" rx="3" fill="#e76f51"/>
+    <rect x="216" y="176" width="34" height="5" fill="#fff" opacity=".35"/>
+    <rect x="254" y="176" width="24" height="76" rx="3" fill="#f4e3c1"/>
+    <rect x="282" y="166" width="32" height="86" rx="3" fill="#6d597a"/>
+    <g transform="rotate(14 350 252)"><rect x="332" y="180" width="28" height="72" rx="3" fill="#457b9d"/></g>
+    <rect x="392" y="172" width="30" height="80" rx="3" fill="#a3b18a"/>
+    <rect x="426" y="190" width="26" height="62" rx="3" fill="#c8963e"/>
+  </g>
+  <rect x="134" y="252" width="332" height="12" fill="url(#wood)"/>
+
+  <!-- shelf 2 books -->
+  <g>
+    <rect x="152" y="290" width="36" height="62" rx="3" fill="#8b5a3c"/>
+    <rect x="192" y="276" width="28" height="76" rx="3" fill="#e9c46a"/>
+    <rect x="224" y="284" width="30" height="68" rx="3" fill="#2a9d8f"/>
+    <rect x="258" y="272" width="34" height="80" rx="3" fill="#e76f51"/>
+    <rect x="258" y="290" width="34" height="5" fill="#fff" opacity=".35"/>
+    <rect x="296" y="292" width="26" height="60" rx="3" fill="#f4e3c1"/>
+    <rect x="326" y="278" width="32" height="74" rx="3" fill="#457b9d"/>
+    <rect x="362" y="288" width="28" height="64" rx="3" fill="#6d597a"/>
+    <!-- small plant -->
+    <rect x="410" y="322" width="36" height="30" rx="5" fill="#c8963e"/>
+    <path d="M428 322c-10-14-6-26 0-34 6 8 10 20 0 34z" fill="#2a9d8f"/>
+    <path d="M428 322c-14-6-22-14-24-24 12 2 22 10 24 24z" fill="#3fb7a8"/>
+  </g>
+  <rect x="134" y="352" width="332" height="12" fill="url(#wood)"/>
+
+  <!-- shelf 3: flow wave -->
+  <path d="M150 410c30 24 60 24 90 0s60-24 90 0 60 24 90 0 40-12 46-6" fill="none" stroke="#2a9d8f" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+  <path d="M150 424c30 24 60 24 90 0s60-24 90 0 60 24 90 0 40-12 46-6" fill="none" stroke="#e8bd6a" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+
+  <!-- floating open book -->
+  <g class="float" transform="translate(405 36)">
+    <path d="M0 40c22-10 44-8 62 6v46c-18-14-40-16-62-6z" fill="url(#pageG)" stroke="#c8963e" stroke-width="3"/>
+    <path d="M124 40c-22-10-44-8-62 6v46c18-14 40-16 62-6z" fill="url(#pageG)" stroke="#c8963e" stroke-width="3"/>
+    <path d="M12 56c14-4 28-3 42 4M12 70c14-4 28-3 42 4M70 60c14-7 28-8 42-4M70 74c14-7 28-8 42-4" stroke="#b9772a" stroke-width="2.2" fill="none" stroke-linecap="round" opacity=".7"/>
+  </g>
+
+  <!-- floating single books -->
+  <g class="float2" transform="translate(40 150) rotate(-14)">
+    <rect width="54" height="74" rx="5" fill="#e76f51"/>
+    <rect x="8" y="12" width="38" height="5" rx="2" fill="#fff" opacity=".6"/>
+    <rect x="8" y="24" width="26" height="4" rx="2" fill="#fff" opacity=".4"/>
+  </g>
+  <g class="float" transform="translate(498 300) rotate(12)">
+    <rect width="48" height="68" rx="5" fill="#6d597a"/>
+    <rect x="7" y="12" width="34" height="5" rx="2" fill="#fff" opacity=".6"/>
+    <rect x="7" y="24" width="22" height="4" rx="2" fill="#fff" opacity=".4"/>
+  </g>
+</svg>
